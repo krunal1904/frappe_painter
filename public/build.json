@@ -1,0 +1,8 @@
+{
+  "css/painter.bundle.css": {
+    "css": ["css/painter.bundle.css"]
+  },
+  "js/painter.bundle.js": {
+    "js": ["js/painter.bundle.js"]
+  }
+}
