@@ -370,6 +370,11 @@ def get_settings():
             "shortcut_style":       doc.shortcut_style or "default",
             # RTL
             "enable_rtl":           doc.enable_rtl or 0,
+            # Workspace background
+            "workspace_bg_image":   doc.workspace_bg_image or "",
+            # User Menu Sidebar & Theme Switcher
+            "enable_user_menu_sidebar": doc.enable_user_menu_sidebar or 0,
+            "enable_theme_switcher":    doc.enable_theme_switcher or 0,
         }
         frappe.cache().set_value("painter_settings", settings, expires_in_sec=300)
         return settings

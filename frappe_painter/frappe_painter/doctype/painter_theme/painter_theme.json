@@ -1,0 +1,196 @@
+{
+  "actions": [],
+  "autoname": "field:theme_name",
+  "creation": "2026-01-01 00:00:00",
+  "doctype": "DocType",
+  "document_type": "System Settings",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "theme_name",
+    "primary_color",
+    "cb0",
+    "secondary_color",
+    "accent_color",
+    "cb1",
+    "navbar_bg",
+    "navbar_text_color",
+    "cb2",
+    "sidebar_bg",
+    "sidebar_text_color",
+    "sidebar_active_bg",
+    "sidebar_active_text",
+    "cb3",
+    "body_bg",
+    "content_bg",
+    "card_bg",
+    "cb4",
+    "btn_primary_bg",
+    "btn_primary_text",
+    "cb5",
+    "is_dark_theme",
+    "workspace_bg_image",
+    "font_family",
+    "border_radius",
+    "custom_css"
+  ],
+  "fields": [
+    {
+      "fieldname": "theme_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Theme Name",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "primary_color",
+      "fieldtype": "Color",
+      "in_list_view": 1,
+      "label": "Primary Color",
+      "reqd": 1
+    },
+    {
+      "fieldname": "cb0",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "secondary_color",
+      "fieldtype": "Color",
+      "label": "Secondary Color"
+    },
+    {
+      "fieldname": "accent_color",
+      "fieldtype": "Color",
+      "label": "Accent Color"
+    },
+    {
+      "fieldname": "cb1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "navbar_bg",
+      "fieldtype": "Color",
+      "label": "Navbar Background"
+    },
+    {
+      "fieldname": "navbar_text_color",
+      "fieldtype": "Color",
+      "label": "Navbar Text Color"
+    },
+    {
+      "fieldname": "cb2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "sidebar_bg",
+      "fieldtype": "Color",
+      "label": "Sidebar Background"
+    },
+    {
+      "fieldname": "sidebar_text_color",
+      "fieldtype": "Color",
+      "label": "Sidebar Text Color"
+    },
+    {
+      "fieldname": "sidebar_active_bg",
+      "fieldtype": "Color",
+      "label": "Sidebar Active Background"
+    },
+    {
+      "fieldname": "sidebar_active_text",
+      "fieldtype": "Color",
+      "label": "Sidebar Active Text"
+    },
+    {
+      "fieldname": "cb3",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "body_bg",
+      "fieldtype": "Color",
+      "label": "Body Background"
+    },
+    {
+      "fieldname": "content_bg",
+      "fieldtype": "Color",
+      "label": "Content Background"
+    },
+    {
+      "fieldname": "card_bg",
+      "fieldtype": "Color",
+      "label": "Card Background"
+    },
+    {
+      "fieldname": "cb4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "btn_primary_bg",
+      "fieldtype": "Color",
+      "label": "Primary Button Background"
+    },
+    {
+      "fieldname": "btn_primary_text",
+      "fieldtype": "Color",
+      "label": "Primary Button Text"
+    },
+    {
+      "fieldname": "cb5",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "is_dark_theme",
+      "fieldtype": "Check",
+      "label": "Dark Theme"
+    },
+    {
+      "fieldname": "workspace_bg_image",
+      "fieldtype": "Attach Image",
+      "label": "Workspace Background Image"
+    },
+    {
+      "fieldname": "font_family",
+      "fieldtype": "Select",
+      "label": "Font Family",
+      "options": "\n'Inter', sans-serif\n'Poppins', sans-serif\n'DM Sans', sans-serif\n'Nunito', sans-serif\n'IBM Plex Sans', sans-serif\n'Roboto', sans-serif\nsystem-ui, sans-serif"
+    },
+    {
+      "fieldname": "border_radius",
+      "fieldtype": "Select",
+      "label": "Border Radius Style",
+      "options": "\nsharp\nrounded\npill"
+    },
+    {
+      "fieldname": "custom_css",
+      "fieldtype": "Code",
+      "label": "Custom CSS",
+      "options": "CSS"
+    }
+  ],
+  "links": [],
+  "modified": "2026-01-01 00:00:00",
+  "modified_by": "Administrator",
+  "module": "Frappe Painter",
+  "name": "Painter Theme",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "theme_name",
+  "track_changes": 1
+}

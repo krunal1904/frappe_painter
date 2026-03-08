@@ -6,4 +6,7 @@ app_version = "5.0.0"
 app_license = "MIT"
 
 app_include_css = ["/assets/frappe_painter/css/painter.bundle.css"]
-app_include_js  = ["/assets/frappe_painter/js/painter.bundle.js"]
+app_include_js  = [
+    "/assets/frappe_painter/js/painter.bundle.js",
+    "/assets/frappe_painter/js/painter_extensions.bundle.js",
+]
