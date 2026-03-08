@@ -1,0 +1,7 @@
+[project]
+name = "frappe_painter"
+version = "5.0.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends.legacy:build"
