@@ -1,0 +1,8 @@
+{
+  "frappe_painter.min.css": {
+    "css": ["css/painter.css"]
+  },
+  "frappe_painter.min.js": {
+    "js": ["js/painter.js"]
+  }
+}
