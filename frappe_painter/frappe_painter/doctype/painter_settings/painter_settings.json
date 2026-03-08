@@ -50,6 +50,8 @@
   "btn_secondary_bg",
   "btn_secondary_text",
   "btn_radius",
+  "btn_style",
+  "btn_hover_animation",
   "cb5",
   "section_body",
   "body_bg",
@@ -90,6 +92,39 @@
   "border_radius_md",
   "border_radius_lg",
   "transition_speed",
+  "section_layout_nav",
+  "nav_style",
+  "layout_density",
+  "page_width_mode",
+  "cb_layout_nav",
+  "section_grid_menu",
+  "grid_menu_bg",
+  "grid_menu_card_style",
+  "cb_grid_menu",
+  "section_list_view",
+  "list_view_style",
+  "list_sticky_header",
+  "list_alternating_rows",
+  "list_row_style",
+  "cb_list_view",
+  "section_form_layout",
+  "form_layout",
+  "form_section_style",
+  "field_style",
+  "cb_form_layout",
+  "section_effects",
+  "enable_glassmorphism",
+  "card_hover_effect",
+  "enable_page_animations",
+  "scrollbar_style",
+  "cb_effects",
+  "section_workspace",
+  "workspace_style",
+  "shortcut_style",
+  "cb_workspace",
+  "section_rtl",
+  "enable_rtl",
+  "cb_rtl",
   "custom_css"
  ],
  "fields": [
@@ -103,7 +138,7 @@
    "fieldname": "active_template",
    "fieldtype": "Select",
    "label": "Quick Template",
-   "options": "custom\nbusiness\nhospital\naudit\nerpnext\ngovernment\nretail\ntech_startup"
+   "options": "custom\nbusiness\nhospital\naudit\nerpnext\ngovernment\nretail\ntech_startup\ndark"
   },
   {"fieldname": "cb0", "fieldtype": "Column Break"},
   {
@@ -185,6 +220,20 @@
   {"fieldname": "btn_secondary_bg", "fieldtype": "Color", "label": "Secondary Button Background", "default": "#f4f5f6"},
   {"fieldname": "btn_secondary_text", "fieldtype": "Color", "label": "Secondary Button Text", "default": "#333"},
   {"fieldname": "btn_radius", "fieldtype": "Data", "label": "Button Border Radius", "default": "6px"},
+  {
+   "fieldname": "btn_style",
+   "fieldtype": "Select",
+   "label": "Button Style",
+   "options": "default\nrounded\npill\noutlined\nghost\ngradient\nelevated",
+   "default": "default"
+  },
+  {
+   "fieldname": "btn_hover_animation",
+   "fieldtype": "Select",
+   "label": "Button Hover Animation",
+   "options": "none\nscale\nglow\nslide",
+   "default": "none"
+  },
   {"fieldname": "cb5", "fieldtype": "Column Break"},
   {
    "fieldname": "section_body",
@@ -258,6 +307,145 @@
    "default": "normal (0.2s)"
   },
   {
+   "fieldname": "section_layout_nav",
+   "fieldtype": "Section Break",
+   "label": "Layout & Navigation"
+  },
+  {
+   "fieldname": "nav_style",
+   "fieldtype": "Select",
+   "label": "Navigation Style",
+   "options": "sidebar\nminimal_sidebar\ntop_bar\ngrid_menu",
+   "default": "sidebar"
+  },
+  {
+   "fieldname": "layout_density",
+   "fieldtype": "Select",
+   "label": "Layout Density",
+   "options": "compact\ncomfortable\ncozy",
+   "default": "comfortable"
+  },
+  {
+   "fieldname": "page_width_mode",
+   "fieldtype": "Select",
+   "label": "Page Width Mode",
+   "options": "full\ncontained\nwide\nnarrow",
+   "default": "full"
+  },
+  {"fieldname": "cb_layout_nav", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_grid_menu",
+   "fieldtype": "Section Break",
+   "label": "Grid Menu (FAB)"
+  },
+  {"fieldname": "grid_menu_bg", "fieldtype": "Color", "label": "Grid Menu Background", "default": "#1E3A8A"},
+  {
+   "fieldname": "grid_menu_card_style",
+   "fieldtype": "Select",
+   "label": "Grid Menu Card Style",
+   "options": "glass\nsolid\noutline\nflat",
+   "default": "glass"
+  },
+  {"fieldname": "cb_grid_menu", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_list_view",
+   "fieldtype": "Section Break",
+   "label": "List View"
+  },
+  {
+   "fieldname": "list_view_style",
+   "fieldtype": "Select",
+   "label": "List View Style",
+   "options": "default\nmodern\ncards\ncompact\nminimal",
+   "default": "default"
+  },
+  {"fieldname": "list_sticky_header", "fieldtype": "Check", "label": "Sticky List Header"},
+  {"fieldname": "list_alternating_rows", "fieldtype": "Check", "label": "Alternating Row Colors"},
+  {
+   "fieldname": "list_row_style",
+   "fieldtype": "Select",
+   "label": "List Row Style",
+   "options": "default\nbordered\nhorizontal\naccent_left",
+   "default": "default"
+  },
+  {"fieldname": "cb_list_view", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_form_layout",
+   "fieldtype": "Section Break",
+   "label": "Form Layout"
+  },
+  {
+   "fieldname": "form_layout",
+   "fieldtype": "Select",
+   "label": "Form Layout",
+   "options": "default\ncompact\ncard",
+   "default": "default"
+  },
+  {
+   "fieldname": "form_section_style",
+   "fieldtype": "Select",
+   "label": "Form Section Style",
+   "options": "default\ncard\ncolored_header\nunderline\nfilled",
+   "default": "default"
+  },
+  {
+   "fieldname": "field_style",
+   "fieldtype": "Select",
+   "label": "Field Style",
+   "options": "default\noutlined\nfilled\nunderline",
+   "default": "default"
+  },
+  {"fieldname": "cb_form_layout", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_effects",
+   "fieldtype": "Section Break",
+   "label": "Effects & Animations"
+  },
+  {"fieldname": "enable_glassmorphism", "fieldtype": "Check", "label": "Enable Glassmorphism"},
+  {
+   "fieldname": "card_hover_effect",
+   "fieldtype": "Select",
+   "label": "Card Hover Effect",
+   "options": "none\nlift\nglow\nscale\nborder_accent",
+   "default": "none"
+  },
+  {"fieldname": "enable_page_animations", "fieldtype": "Check", "label": "Enable Page Animations"},
+  {
+   "fieldname": "scrollbar_style",
+   "fieldtype": "Select",
+   "label": "Scrollbar Style",
+   "options": "default\nthin\nmodern\nnone",
+   "default": "thin"
+  },
+  {"fieldname": "cb_effects", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_workspace",
+   "fieldtype": "Section Break",
+   "label": "Workspace"
+  },
+  {
+   "fieldname": "workspace_style",
+   "fieldtype": "Select",
+   "label": "Workspace Style",
+   "options": "default\ncard_grid\nminimal",
+   "default": "default"
+  },
+  {
+   "fieldname": "shortcut_style",
+   "fieldtype": "Select",
+   "label": "Shortcut Style",
+   "options": "default\nlarge_icons\nicon_only\nlist",
+   "default": "default"
+  },
+  {"fieldname": "cb_workspace", "fieldtype": "Column Break"},
+  {
+   "fieldname": "section_rtl",
+   "fieldtype": "Section Break",
+   "label": "RTL Support"
+  },
+  {"fieldname": "enable_rtl", "fieldtype": "Check", "label": "Enable RTL (Right-to-Left)"},
+  {"fieldname": "cb_rtl", "fieldtype": "Column Break"},
+  {
    "fieldname": "custom_css",
    "fieldtype": "Code",
    "label": "Custom CSS",
@@ -265,7 +453,7 @@
   }
  ],
  "issingle": 1,
- "modified": "2026-01-01 00:00:00",
+ "modified": "2026-03-08 00:00:00",
  "modified_by": "Administrator",
  "module": "Frappe Painter",
  "name": "Painter Settings",

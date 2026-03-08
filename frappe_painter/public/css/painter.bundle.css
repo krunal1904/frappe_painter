@@ -1,3 +1,17 @@
-/* Frappe Painter v5 — Base CSS (minimal, JS handles the heavy lifting) */
+/* Frappe Painter v6 — Base CSS (minimal, JS handles the heavy lifting) */
 /* Prevents flash of unstyled content */
 body { transition: background-color 0.1s ease; }
+
+/* Base keyframes — must exist before JS runs */
+@keyframes fp-fadein {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+}
+@keyframes fp-slidein {
+    from { opacity: 0; transform: translateX(-4px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* Grid menu overlay base */
+#fp-grid-menu-overlay { box-sizing: border-box; }
+#fp-grid-menu-fab { box-sizing: border-box; }
