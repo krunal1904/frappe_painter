@@ -1,2 +1,2 @@
-recursive-include frappe_painter/public *
-recursive-include frappe_painter/frappe_painter *
+include MANIFEST.in
+recursive-include frappe_painter *.py *.json *.js *.css *.html *.txt *.png *.jpg *.svg *.ico

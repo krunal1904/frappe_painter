@@ -1,5 +1,7 @@
 {
-  "name": "frappe_painter",
-  "version": "5.0.0",
-  "description": "Comprehensive UI/UX Theme Customizer for Frappe/ERPNext"
+	"name": "frappe_painter",
+	"version": "5.0.0",
+	"description": "Comprehensive UI/UX Theme Customizer for Frappe/ERPNext",
+	"scripts": {},
+	"devDependencies": {}
 }
