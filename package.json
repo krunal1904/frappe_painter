@@ -1,5 +1,5 @@
 {
   "name": "frappe_painter",
   "version": "5.0.0",
-  "scripts": { "build": "echo 'No build needed'" }
+  "description": "Comprehensive UI/UX Theme Customizer for Frappe/ERPNext"
 }
