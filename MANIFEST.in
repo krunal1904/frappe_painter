@@ -1,0 +1,2 @@
+recursive-include frappe_painter/public *
+recursive-include frappe_painter/doctype *
